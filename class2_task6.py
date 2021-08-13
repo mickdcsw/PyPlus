@@ -1,0 +1,16 @@
+
+from  netmiko import ConnectHandler
+import getpass
+
+password = getpass()
+
+device = {
+    "host": "cisco4.lasthop.io",
+    "username": "pyclass",
+    "password": password,
+    "secret": password,
+    "device_type": "cisco_ios",
+    "session_log": "my_output.txt"
+}
+
+
