@@ -1,4 +1,4 @@
-Value PORT_NAME (^\S+)
+Value PORT_NAME (\S+)
 
 Start
   ^Port.*Type\s*$$ -> ShowPorts

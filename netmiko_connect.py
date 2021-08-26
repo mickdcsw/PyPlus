@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 
 from netmiko import ConnectHandler
-#from getpass import getpasss
+from getpass import getpass
+
+password = getpass()
 
 device1 = {"host": "cisco3.lasthop.io",
 	"username": "pyclass",
-	"password": "88newclass",
+	"password": password,
 	"device_type": "cisco_ios",
 	"session_log": "last_session_log.txt"
 	}
@@ -13,7 +15,7 @@ device1 = {"host": "cisco3.lasthop.io",
 	
 device2 = {"host": "cisco4.lasthop.io",
         "username": "pyclass",
-        "password": "88newclass",
+        "password": password,
         "device_type": "cisco_ios",
         "session_log": "last_session_log.txt"
         }

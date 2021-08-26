@@ -1,27 +1,30 @@
 import yaml
+from getpass import getpass
+
+password = getpass()
 
 cisco3 = {
     "host": "cisco3.lasthop.io",
     "username": "pyclass",
-    "password": "password"
+    "password": password
 }
 
 cisco4 = {
     "host": "cisco4.lasthop.io",
     "username": "pyclas",
-    "password": "password"
+    "password": password
 }
 
 nxos1 = {
     "host": "nxos1.lasthop.io",
     "username": "pyclass",
-    "password": "password"
+    "password": password
 }
 
 nxos2 = {
     "host": "nxos2.lasthop.io",
     "username": "pyclass",
-    "password": "password"
+    "password": password
 }
 
 devices = [cisco3, cisco4, nxos1, nxos2]
