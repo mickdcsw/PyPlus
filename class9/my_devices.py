@@ -18,4 +18,11 @@ arista1 = dict(
     optional_args={}
 )
 
+nxos1 = dict(
+    hostname="nxos1.lasthop.io",
+    username="pyclass",
+    password=password,
+    device_type="nx-os",
+    optional_args={"port": 8443}
+
 all_devices = [cisco3, arista1]

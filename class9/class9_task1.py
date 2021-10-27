@@ -10,9 +10,11 @@ def task1b(dev):
 
     device = driver(**dev)   
     device.open()
-    print(device)
+    print(device,"\n")
     facts = device.get_facts()
     pprint(facts)
+    print('\n')
+    print('The Platform Type is:',device_type)
 
 
 if __name__ == "__main__":

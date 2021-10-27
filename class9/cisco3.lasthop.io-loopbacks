@@ -1,0 +1,5 @@
+interface loopback 100
+ description loopback 100
+!
+interface loopback 101
+ description loopback 101
